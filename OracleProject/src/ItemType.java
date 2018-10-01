@@ -2,7 +2,7 @@
     store the following information */
 public enum ItemType {
 
-  AUDIO("AU"), VISUAL("VI"),AUIDOMOBLIE ("AM"), VISUALMOBLIE("VM");
+  AUDIO("AU"), VISUAL("VI"), AUIDOMOBLIE ("AM"), VISUALMOBLIE("VM");
     
     public String code;
     
