@@ -4,10 +4,9 @@ import java.util.Date;
 public abstract class Product implements Item {
 
   // fields to Product
-  private int serialNumber;
-  private String manufacturer = Item.manufacturer;
-  private Date manufacturedOn;
-  private String name;
+  int serialNumber;
+  Date manufacturedOn;
+  String name;
   // integer class variable called currentProductionNumber
   static Integer currentProductionNumber = 1;
 
