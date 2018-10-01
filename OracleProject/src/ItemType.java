@@ -2,6 +2,12 @@
     store the following information */
 public enum ItemType {
 
-  AU, VI, AM, VM;
+  AUDIO("AU"), VISUAL("VI"),AUIDOMOBLIE ("AM"), VISUALMOBLIE("VM");
+    
+    public String code;
+    
+    ItemType(String code) {
+        this.code = code;
+    }
 
 }
