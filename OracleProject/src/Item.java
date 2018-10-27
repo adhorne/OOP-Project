@@ -1,7 +1,10 @@
-import java.util.Date;
+/**
+ * Create an interface called Item that will force all classes to implement the following functions
+ *
+ * @author Austin Horne
+ */
 
-/* Create an interface called Item that will
-   force all classes to implement the following functions */
+import java.util.Date;
 
 public interface Item {
 

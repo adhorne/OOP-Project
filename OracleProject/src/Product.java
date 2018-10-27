@@ -1,7 +1,12 @@
+/**
+ * Create an abstract type called Product that will implement the Item interface
+ *
+ * @author Austin Horne
+ */
+
 import java.util.Date;
 
-// Create an abstract type called Product that will implement the Item interface
-public abstract class Product implements Item {
+public class Product implements Item, Comparable<Item> {
 
   // fields to Product
   private int serialNumber;
@@ -44,4 +49,12 @@ public abstract class Product implements Item {
   public int getSerialNumber() {
     return serialNumber;
   }
+
+  public int compareTo(Item o) {
+
+    return name.compareTo(o.getName());
+
+  }
+
 }
+
