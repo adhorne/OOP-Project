@@ -6,7 +6,7 @@
 
 import java.util.Date;
 
-public class Product implements Item, Comparable<Item> {
+public class Product implements Item, Comparable<Product> {
 
   // fields to Product
   private int serialNumber;
@@ -50,9 +50,9 @@ public class Product implements Item, Comparable<Item> {
     return serialNumber;
   }
 
-  public int compareTo(Item o) {
+  public int compareTo(Product p) {
 
-    return name.compareTo(o.getName());
+    return name.compareTo(p.getName());
 
   }
 

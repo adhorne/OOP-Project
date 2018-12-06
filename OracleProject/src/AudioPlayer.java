@@ -6,15 +6,15 @@
  * @author Austin Horne
  */
 
-public class AudioPlayer extends Product implements MultimediaControl, Comparable<Item> {
+public class AudioPlayer extends Product implements MultimediaControl {
 
   private String audioSpecification;
   private ItemType mediaType;
 
-  public AudioPlayer(String name, String audioSpecification, ItemType mediaType) {
+  public AudioPlayer(String name, String audioSpecification) {
     super(name);
     this.audioSpecification = audioSpecification;
-    this.mediaType = mediaType;
+    this.mediaType = ItemType.AUDIO;
   }
 
   public void play() {
